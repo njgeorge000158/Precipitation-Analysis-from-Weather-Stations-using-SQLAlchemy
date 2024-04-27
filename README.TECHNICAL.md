@@ -162,11 +162,15 @@ Flask, Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.4, SQLite
 
   &emsp; |&rarr; [./images/climate_analysisFigure492Precipitation20178MonthsHistogram.png](./images/climate_analysisFigure492Precipitation20178MonthsHistogram.png)
 
-  &emsp; |&rarr; [./images/climate_analysisFigure3101TemperatureObservationsTOBs20102017Histograms.png](./images/climate_analysisFigure3101TemperatureObservationsTOBs20102017Histograms.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure3101TemperatureObservationsTOBsHistograms20102017.png](./images/climate_analysisFigure3101TemperatureObservationsTOBsHistograms20102017.png)
 
   &emsp; |&rarr; [./images/climate_analysisFigure3102TemperatureObservationsTOBsDistribution.png](./images/climate_analysisFigure3102TemperatureObservationsTOBsDistribution.png)
 
-  &emsp; |&rarr; [./images/climate_analysisFigure4103Precipitation20102017Distribution.png](./images/climate_analysisFigure4103Precipitation20102017Distribution.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure4101PrecipitationvsTime20102017.png](./images/climate_analysisFigure4101PrecipitationvsTime20102017.png)
+
+  &emsp; |&rarr; [./images/climate_analysisFigure4102PrecipitationHistograms20102017.png](./images/climate_analysisFigure4102PrecipitationHistograms20102017.png)
+
+  &emsp; |&rarr; [./images/climate_analysisFigure4103PrecipitationDistribution20102017.png](./images/climate_analysisFigure4103PrecipitationDistribution20102017.png)
 
   &emsp; |&rarr; [./images/climate_analysisTable23MostActiveStationIDsandTOBSByYear.png](./images/climate_analysisTable23MostActiveStationIDsandTOBSByYear.png)
 
@@ -206,20 +210,14 @@ Flask, Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.4, SQLite
 
   &emsp; |&rarr; [./images/climate_analysisTable3102TemperatureObservationsTOBsCorrelationMatrix20102016.png](./images/climate_analysisTable3102TemperatureObservationsTOBsCorrelationMatrix20102016.png)
 
-  &emsp; |&rarr; [./images/climate_analysisTable4101PrecipitationvsTime20102017.png](./images/climate_analysisTable4101PrecipitationvsTime20102017.png)
-
-  &emsp; |&rarr; [./images/climate_analysisTable4102Precipitation20102017Histograms.png](./images/climate_analysisTable4102Precipitation20102017Histograms.png)
-
   &emsp; |&rarr; [./images/ClimatePyTable4101TemperatureObservationsTOBs20102017SummaryStatistics.png](./images/ClimatePyTable4101TemperatureObservationsTOBs20102017SummaryStatistics.png)
 
-  &emsp; |&rarr; [./images/ClimatePyTable4102Precipitation20102017Histograms.png](./images/ClimatePyTable4102Precipitation20102017Histograms.png)
+  &emsp; |&rarr; [./images/climate_analysisTable4102PrecipitationCorrelationMatrix20102016.png](./images/climate_analysisTable4102PrecipitationCorrelationMatrix20102016.png)
 
-  &emsp; |&rarr; [./images/ClimatePyTable4102TemperatureObservationsTOBs20102016CorrelationMatrix.png](./images/ClimatePyTable4102TemperatureObservationsTOBs20102016CorrelationMatrix.png)
+  &emsp; |&rarr; [./images/climate_analysisTable4111TotalPrecipitationinchesvsYear20102017.png](./images/climate_analysisTable4111TotalPrecipitationinchesvsYear20102017.png)
 
-  &emsp; |&rarr; [./images/ClimatePyTable4111TotalPrecipitationvsTime20102017.png](./images/ClimatePyTable4111TotalPrecipitationvsTime20102017.png)
+  &emsp; |&rarr; [./images/climate_analysisTable4112TotalPrecipitationStatistics20102017.png](./images/climate_analysisTable4112TotalPrecipitationStatistics20102017.png)
 
-  &emsp; |&rarr; [./images/ClimatePyTable4112TotalPrecipitation20102017SummaryStatistics.png](./images/ClimatePyTable4112TotalPrecipitation20102017SummaryStatistics.png)
-  
   &emsp; |&rarr; [./images/README.md](./images/README.md)
 
 |&rarr; [./logs/](./logs/)
