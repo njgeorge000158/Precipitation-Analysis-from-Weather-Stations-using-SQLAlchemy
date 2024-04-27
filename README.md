@@ -1,5 +1,4 @@
-
-![maui_gettyimages-181172047-1505129277-WPZh_w7bkvd](https://github.com/njgeorge000158/sqlalchemy-challenge/assets/137228821/bc343ff2-cbda-4439-9a39-e539ff67c460)
+![weatherapi](https://github.com/njgeorge000158/Precipitation-Analysis-from-Weather-Stations-using-SQLAlchemy/assets/137228821/bf595054-83c1-43f9-9e2f-fe1818a49317)
 
 ----
 
@@ -13,4 +12,4 @@ The source and module files are in this folder, SurfsUp; the images of plots mad
 
 ## Copyright
 
-N. James George © 2023. All Rights Reserved.
+Nicholas J. George © 2023. All Rights Reserved.
