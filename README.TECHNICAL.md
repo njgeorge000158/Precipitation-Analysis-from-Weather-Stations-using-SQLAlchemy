@@ -42,17 +42,23 @@ climate_analysis_constants.py
 
 climate_api.py
 
-PyLogConstants.py
+logx_constants.py
 
-PyLogFunctions.py
+logx.py
 
-PyLogSubRoutines.py
+mathx.py
 
-PySubroutines.py
+matplotlibx.py
 
-If the folders, Resources, Logs, and Images are not present, the IPython notebook will create them.  The Resources folder holds CSV input files and an SQLite file for the IPython Notebook and Flask API; the Logs folder contains debug and log files from testing the IPython Notebook; and the Images folder has the PNG image files of the IPython Notebook's tables and plots.
+pandasx_constants.py
 
-To place the IPython notebook in Log Mode, Debug Mode, or Image Mode set the parameter for the appropriate subroutine in coding cell #2 to True. In Debug Mode, the program displays the debug information and writes it to a debug file in the Logs folder; the same is true in Log Mode for log information sent to a log file. If the program is in Log Mode but NOT Debug Mode, it displays no debug information, but writes that information to the log file. If the program is in Image Mode, it writes all DataFrames, hvplot maps, and matplotlib plots to PNG files in the Images Folder.
+pandasx.py
+
+timex.py
+
+If the folders, logs and images, are not present, the IPython notebook will create them.  The folder, resources, holds the sqlite database file for the IPython Notebook and Flask API; the folder, logs, contains log files from testing the IPython Notebook; and the folder, images, has the PNG image files of the IPython Notebook's tables and plots.
+
+To place the IPython notebook in Log Mode or Image Mode set the parameter for the appropriate subroutine in coding cell #2 to True. If the program is in Log Mode, it writes information to the log file in the folder, logs. If the program is in Image Mode, it writes all DataFrames, hvplot maps, and matplotlib plots to PNG files in the folder, images.
 
 ----
 
@@ -62,11 +68,11 @@ To place the IPython notebook in Log Mode, Debug Mode, or Image Mode set the par
 
 #### Source code
 
-ClimatePy.ipynb, ClimateApp.py,
+climate_analysis.ipynb, climate_api.py, climate_analysis_constants.py, climate_api.py, logx_constants.py, logx.py, mathx.py, matplotlibx.py, pandasx_constants.py, pandasx.py, timex.py
 
 #### Input files
 
-hawaii.sqlite, hawaii_measurements.csv, hawaii_stations.csv
+hawaii.sqlite
 
 #### Output files
 
@@ -78,7 +84,7 @@ n/a
 
 #### Software
 
- Flask, Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.4, SQLite
+Flask, Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.4, SQLite
 
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
@@ -90,159 +96,143 @@ n/a
 
 #### main branch 
 
-|&rarr; [./ClimateApp.py](./ClimateApp.py)
+|&rarr; [./climate_analysis_constants.py](./climate_analysis_constants.py)
 
-|&rarr; [./ClimatePy.ipynb](./ClimatePy.ipynb)
+|&rarr; [./climate_analysis.ipynb](./climate_analysis.ipynb)
 
-|&rarr; [./PyConstants.py](./PyConstants.py)
-
-|&rarr; [./PyFunctions.py](./PyFunctions.py)
-
-|&rarr; [./PyLogConstants.py](./PyLogConstants.py)
-
-|&rarr; [./PyLogFunctions.py](./PyLogFunctions.py)
-
-|&rarr; [./PyLogSubRoutines.py](./PyLogSubRoutines.py)
-
-|&rarr; [./PySubRoutines.py](./PySubRoutines.py)
+|&rarr; [./climate_api.py](./climate_api.py)
 
 |&rarr; [./README.TECHNICAL.md](./README.TECHNICAL.md)
 
 |&rarr; [./README.md](./README.md)
 
-|&rarr; [./Table-Of-Contents-PAFWSUS.md](./Table-Of-Contents-PAFWSUS.md)
+|&rarr; [./table-of-contents.md](./table-of-contents.md)
 
-|&rarr; [./Images/](./Images/)
+|&rarr; [./images/](./images/)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure24MinimumMaximumandAverageTemperaturesByYear.png](./Images/ClimatePyFigure24MinimumMaximumandAverageTemperaturesByYear.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure24MinimumMaximumandAverageTemperaturesByYear.png](./images/climate_analysisFigure24MinimumMaximumandAverageTemperaturesByYear.png)
   
-  &emsp; |&rarr; [./Images/ClimatePyFigure32TemperatureObservationsTOBs2010Histogram.png](./Images/ClimatePyFigure32TemperatureObservationsTOBs2010Histogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure32TemperatureObservationsTOBsHistogram2010.png](./images/climate_analysisFigure32TemperatureObservationsTOBsHistogram2010.png)
   
-  &emsp; |&rarr; [./Images/ClimatePyFigure33TemperatureObservationsTOBs2011Histogram.png](./Images/ClimatePyFigure33TemperatureObservationsTOBs2011Histogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure33TemperatureObservationsTOBsHistogram2011.png](./images/climate_analysisFigure33TemperatureObservationsTOBsHistogram2011.png)
   
-  &emsp; |&rarr; [./Images/ClimatePyFigure34TemperatureObservationsTOBs2012Histogram.png](./Images/ClimatePyFigure34TemperatureObservationsTOBs2012Histogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure34TemperatureObservationsTOBsHistogram2012.png](./images/climate_analysisFigure34TemperatureObservationsTOBsHistogram2012.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure35TemperatureObservationsTOBs2013Histogram.png](./Images/ClimatePyFigure35TemperatureObservationsTOBs2013Histogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure35TemperatureObservationsTOBsHistogram2013.png](./images/climate_analysisFigure35TemperatureObservationsTOBsHistogram2013.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure36TemperatureObservationsTOBs2014Histogram.png](./Images/ClimatePyFigure36TemperatureObservationsTOBs2014Histogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure36TemperatureObservationsTOBsHistogram2014.png](./images/climate_analysisFigure36TemperatureObservationsTOBsHistogram2014.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure37TemperatureObservationsTOBs2015Histogram.png](./Images/ClimatePyFigure37TemperatureObservationsTOBs2015Histogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure37TemperatureObservationsTOBsHistogram2015.png](./images/climate_analysisFigure37TemperatureObservationsTOBsHistogram2015.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure38TemperatureObservationsTOBs2016Histogram.png](./Images/ClimatePyFigure38TemperatureObservationsTOBs2016Histogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure38TemperatureObservationsTOBsHistogram2016.png](./images/climate_analysisFigure38TemperatureObservationsTOBsHistogram2016.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure39TemperatureObservationsTOBs20178monthsHistogram.png](./Images/ClimatePyFigure39TemperatureObservationsTOBs20178monthsHistogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure39TemperatureObservationsTOBsHistogram2017.png](./images/climate_analysisFigure39TemperatureObservationsTOBsHistogram2017.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure411TotalPrecipitationvsYear.png](./Images/ClimatePyFigure411TotalPrecipitationvsYear.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure411TotalPrecipitationvsYear.png](./images/climate_analysisFigure411TotalPrecipitationvsYear.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure421PrecipitationvsTime2010.png](./Images/ClimatePyFigure421PrecipitationvsTime2010.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure421PrecipitationvsTime2010.png](./images/climate_analysisFigure421PrecipitationvsTime2010.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure422Precipitation2010Histogram.png](./Images/ClimatePyFigure422Precipitation2010Histogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure422PrecipitationHistogram2010.png](./images/climate_analysisFigure422PrecipitationHistogram2010.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure431PrecipitationvsTime2011.png](./Images/ClimatePyFigure431PrecipitationvsTime2011.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure431PrecipitationvsTime2011.png](./images/climate_analysisFigure431PrecipitationvsTime2011.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure432Precipitation2011Histogram.png](./Images/ClimatePyFigure432Precipitation2011Histogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure432Precipitation2011Histogram.png](./images/climate_analysisFigure432Precipitation2011Histogram.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure441PrecipitationvsTime2012.png](./Images/ClimatePyFigure441PrecipitationvsTime2012.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure441PrecipitationvsTime2012.png](./images/climate_analysisFigure441PrecipitationvsTime2012.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure442Precipitation2012Histogram.png](./Images/ClimatePyFigure442Precipitation2012Histogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure442Precipitation2012Histogram.png](./images/climate_analysisFigure442Precipitation2012Histogram.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure451PrecipitationvsTime2013.png](./Images/ClimatePyFigure451PrecipitationvsTime2013.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure451PrecipitationvsTime2013.png](./images/climate_analysisFigure451PrecipitationvsTime2013.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure452Precipitation2013Histogram.png](./Images/ClimatePyFigure452Precipitation2013Histogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure452Precipitation2013Histogram.png](./images/climate_analysisFigure452Precipitation2013Histogram.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure461PrecipitationvsTime2014.png](./Images/ClimatePyFigure461PrecipitationvsTime2014.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure461PrecipitationvsTime20144.png](./images/climate_analysisFigure461PrecipitationvsTime2014.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure462Precipitation2014Histogram.png](./Images/ClimatePyFigure462Precipitation2014Histogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure462Precipitation2014Histogram.png](./images/climate_analysisFigure462Precipitation2014Histogram.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure471PrecipitationvsTime2015.png](./Images/ClimatePyFigure471PrecipitationvsTime2015.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure471PrecipitationvsTime2015.png](./images/climate_analysisFigure471PrecipitationvsTime2015.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure472Precipitation2015Histogram.png](./Images/ClimatePyFigure472Precipitation2015Histogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure472Precipitation2015Histogram.png](./images/climate_analysisFigure472Precipitation2015Histogram.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure481PrecipitationvsTime2016.png](./Images/ClimatePyFigure481PrecipitationvsTime2016.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure481PrecipitationvsTime2016.png](./images/climate_analysisFigure481PrecipitationvsTime2016.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure482Precipitation2016Histogram.png](./Images/ClimatePyFigure482Precipitation2016Histogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure482Precipitation2016Histogram.png](./images/climate_analysisFigure482Precipitation2016Histogram.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure491PrecipitationvsTime20178Months.png](./Images/ClimatePyFigure491PrecipitationvsTime20178Months.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure491PrecipitationvsTime20178Months.png](./images/climate_analysisFigure491PrecipitationvsTime20178Months.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure492Precipitation20178MonthsHistogram.png](./Images/ClimatePyFigure492Precipitation20178MonthsHistogram.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure492Precipitation20178MonthsHistogram.png](./images/climate_analysisFigure492Precipitation20178MonthsHistogram.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure3101TemperatureObservationsTOBs20102017Histograms.png](./Images/ClimatePyFigure3101TemperatureObservationsTOBs20102017Histograms.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure3101TemperatureObservationsTOBs20102017Histograms.png](./images/climate_analysisFigure3101TemperatureObservationsTOBs20102017Histograms.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure3102TemperatureObservationsTOBsDistribution.png](./Images/ClimatePyFigure3102TemperatureObservationsTOBsDistribution.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure3102TemperatureObservationsTOBsDistribution.png](./images/climate_analysisFigure3102TemperatureObservationsTOBsDistribution.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure4103Precipitation20102017Distribution.png](./Images/ClimatePyFigure4103Precipitation20102017Distribution.png)
+  &emsp; |&rarr; [./images/climate_analysisFigure4103Precipitation20102017Distribution.png](./images/climate_analysisFigure4103Precipitation20102017Distribution.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable23MostActiveStationIDsandTOBSByYear.png](./Images/ClimatePyTable23MostActiveStationIDsandTOBSByYear.png)
+  &emsp; |&rarr; [./images/climate_analysisTable23MostActiveStationIDsandTOBSByYear.png](./images/climate_analysisTable23MostActiveStationIDsandTOBSByYear.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable24MinimumMaximumandAverageTemperaturesByYear.png](./Images/ClimatePyTable24MinimumMaximumandAverageTemperaturesByYear.png)
+  &emsp; |&rarr; [./images/climate_analysisTable24MinimumMaximumandAverageTemperaturesByYear.png](./images/climate_analysisTable24MinimumMaximumandAverageTemperaturesByYear.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable32TemperatureObservationsTOBs2010SummaryStatistics.png](./Images/ClimatePyTable32TemperatureObservationsTOBs2010SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable32TemperatureObservationsTOBsStatistics2010.png](./images/climate_analysisTable32TemperatureObservationsTOBsStatistics2010.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable33TemperatureObservationsTOBs2011SummaryStatistics.png](./Images/ClimatePyTable33TemperatureObservationsTOBs2011SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable33TemperatureObservationsTOBsStatistics2011.png](./images/climate_analysisTable33TemperatureObservationsTOBsStatistics2011.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable34TemperatureObservationsTOBs2012SummaryStatistics.png](./Images/ClimatePyTable34TemperatureObservationsTOBs2012SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable34TemperatureObservationsTOBsStatistics2012.png](./images/climate_analysisTable34TemperatureObservationsTOBsStatistics2012.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable35TemperatureObservationsTOBs2013SummaryStatistics.png](./Images/ClimatePyTable35TemperatureObservationsTOBs2013SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable35TemperatureObservationsTOBsStatistics2013.png](./images/climate_analysisTable35TemperatureObservationsTOBsStatistics2013.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable36TemperatureObservationsTOBs2014SummaryStatistics.png](./Images/ClimatePyTable36TemperatureObservationsTOBs2014SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable36TemperatureObservationsTOBsStatistics2014.png](./images/climate_analysisTable36TemperatureObservationsTOBsStatistics2014.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable37TemperatureObservationsTOBs2015SummaryStatistics.png](./Images/ClimatePyTable37TemperatureObservationsTOBs2015SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable37TemperatureObservationsTOBsStatistics2015.png](./images/climate_analysisTable37TemperatureObservationsTOBsStatistics2015.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable38TemperatureObservationsTOBs2016SummaryStatistics.png](./Images/ClimatePyTable38TemperatureObservationsTOBs2016SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable38TemperatureObservationsTOBsStatistics2016.png](./images/climate_analysisTable38TemperatureObservationsTOBsStatistics2016.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable39TemperatureObservationsTOBs20178MonthsSummaryStatistics.png](./Images/ClimatePyTable39TemperatureObservationsTOBs20178MonthsSummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable39TemperatureObservationsTOBsStatistics2017.png](./images/climate_analysisTable39TemperatureObservationsTOBsStatistics2017.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable42Precipitation2010SummaryStatistics.png](./Images/ClimatePyTable42Precipitation2010SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable42Precipitation2010SummaryStatistics.png](./images/climate_analysisTable42Precipitation2010SummaryStatistics.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable43Precipitation2011SummaryStatistics.png](./Images/ClimatePyTable43Precipitation2011SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable43Precipitation2011SummaryStatistics.png](./images/climate_analysisTable43Precipitation2011SummaryStatistics.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable44Precipitation2012SummaryStatistics.png](./Images/ClimatePyTable44Precipitation2012SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable44Precipitation2012SummaryStatistics.png](./images/climate_analysisTable44Precipitation2012SummaryStatistics.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable45Precipitation2013SummaryStatistics.png](./Images/ClimatePyTable45Precipitation2013SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable45Precipitation2013SummaryStatistics.png](./images/climate_analysisTable45Precipitation2013SummaryStatistics.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable46Precipitation2014SummaryStatistics.png](./Images/ClimatePyTable46Precipitation2014SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable46Precipitation2014SummaryStatistics.png](./images/climate_analysisTable46Precipitation2014SummaryStatistics.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable47Precipitation2015SummaryStatistics.png](./Images/ClimatePyTable47Precipitation2015SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable47Precipitation2015SummaryStatistics.png](./images/climate_analysisTable47Precipitation2015SummaryStatistics.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable48Precipitation2016SummaryStatistics.png](./Images/ClimatePyTable48Precipitation2016SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable48Precipitation2016SummaryStatistics.png](./images/climate_analysisTable48Precipitation2016SummaryStatistics.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable49Precipitation20178MonthsSummaryStatistics.png](./Images/ClimatePyTable49Precipitation20178MonthsSummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable49Precipitation20178MonthsSummaryStatistics.png](./images/climate_analysisTable49Precipitation20178MonthsSummaryStatistics.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable3101TemperatureObservationsTOBs20102017SummaryStatistics.png](./Images/ClimatePyTable3101TemperatureObservationsTOBs20102017SummaryStatistics.png)
+  &emsp; |&rarr; [./images/climate_analysisTable3102TemperatureObservationsTOBsCorrelationMatrix20102016.png](./images/climate_analysisTable3102TemperatureObservationsTOBsCorrelationMatrix20102016.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable3102TemperatureObservationsTOBs20102016CorrelationMatrix.png](./Images/ClimatePyTable3102TemperatureObservationsTOBs20102016CorrelationMatrix.png)
+  &emsp; |&rarr; [./images/climate_analysisTable4101PrecipitationvsTime20102017.png](./images/climate_analysisTable4101PrecipitationvsTime20102017.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable4101PrecipitationvsTime20102017.png](./Images/ClimatePyTable4101PrecipitationvsTime20102017.png)
+  &emsp; |&rarr; [./images/climate_analysisTable4102Precipitation20102017Histograms.png](./images/climate_analysisTable4102Precipitation20102017Histograms.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable4101TemperatureObservationsTOBs20102017SummaryStatistics.png](./Images/ClimatePyTable4101TemperatureObservationsTOBs20102017SummaryStatistics.png)
+  &emsp; |&rarr; [./images/ClimatePyTable4101TemperatureObservationsTOBs20102017SummaryStatistics.png](./images/ClimatePyTable4101TemperatureObservationsTOBs20102017SummaryStatistics.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable4102Precipitation20102017Histograms.png](./Images/ClimatePyTable4102Precipitation20102017Histograms.png)
+  &emsp; |&rarr; [./images/ClimatePyTable4102Precipitation20102017Histograms.png](./images/ClimatePyTable4102Precipitation20102017Histograms.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable4102TemperatureObservationsTOBs20102016CorrelationMatrix.png](./Images/ClimatePyTable4102TemperatureObservationsTOBs20102016CorrelationMatrix.png)
+  &emsp; |&rarr; [./images/ClimatePyTable4102TemperatureObservationsTOBs20102016CorrelationMatrix.png](./images/ClimatePyTable4102TemperatureObservationsTOBs20102016CorrelationMatrix.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable4111TotalPrecipitationvsTime20102017.png](./Images/ClimatePyTable4111TotalPrecipitationvsTime20102017.png)
+  &emsp; |&rarr; [./images/ClimatePyTable4111TotalPrecipitationvsTime20102017.png](./images/ClimatePyTable4111TotalPrecipitationvsTime20102017.png)
 
-  &emsp; |&rarr; [./Images/ClimatePyTable4112TotalPrecipitation20102017SummaryStatistics.png](./Images/ClimatePyTable4112TotalPrecipitation20102017SummaryStatistics.png)
+  &emsp; |&rarr; [./images/ClimatePyTable4112TotalPrecipitation20102017SummaryStatistics.png](./images/ClimatePyTable4112TotalPrecipitation20102017SummaryStatistics.png)
   
-  &emsp; |&rarr; [./Images/README.md](./Images/README.md)
+  &emsp; |&rarr; [./images/README.md](./images/README.md)
 
-|&rarr; [./Logs/](./Logs/)
+|&rarr; [./logs/](./logs/)
 
-  &emsp; |&rarr; [./Logs/20230930ClimatePyDebug.txt](./Logs/20230930ClimatePyDebug.txt)
+  &emsp; |&rarr; [./logs/20240426climate_analysis_log.txt](./logs/20240426climate_analysis_log.txt)
 
-  &emsp; |&rarr; [./Logs/20230930ClimatePyLog.txt](./Logs/20230930ClimatePyLog.txt)
+  &emsp; |&rarr; [./logs/README.md](./logs/README.md)
 
-  &emsp; |&rarr; [./Logs/README.md](./Logs/README.md)
+|&rarr; [./resources/](./resources/)
 
-|&rarr; [./Resources/](./Resources/)
+  &emsp; |&rarr; [./resources/hawaii.sqlite](./resources/hawaii.sqlite)
 
-  &emsp; |&rarr; [./Resources/hawaii_measurements.csv](./Resources/hawaii_measurements.csv)
-
-  &emsp; |&rarr; [./Resources/hawaii_stations.csv](./Resources/hawaii_stations.csv)
-
-  &emsp; |&rarr; [./Resources/hawaii.sqlite](./Resources/hawaii.sqlite)
-
-  &emsp; |&rarr; [./Resources/README.md](./Resources/README.md)
+  &emsp; |&rarr; [./resources/README.md](./resources/README.md)
 
 ----
 
@@ -272,4 +262,4 @@ n/a
 
 ### Copyright
 
-N. James George © 2023. All Rights Reserved.
+Nicholas J. George © 2023. All Rights Reserved.
