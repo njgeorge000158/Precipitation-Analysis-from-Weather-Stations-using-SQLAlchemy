@@ -1,7 +1,7 @@
-This folder includes the input CSV and SQLite database file for the IPython notebook, ClimatePy.ipynb, and the Flask API, ClimateApp.py.
+This folder includes the input CSV and SQLite database files for the IPython notebook, climate_analysis.ipynb, and the Flask API, climate_api.py.
 
 ----
 
 ### Copyright
 
-N. James George © 2023. All Rights Reserved.
+Nicholas J. George © 2023. All Rights Reserved.
