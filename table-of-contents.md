@@ -1,8 +1,8 @@
-# Precipitation Analysis from Weather Stations using SQLAlchemy
+# Precipitation-Analysis-from-Weather-Stations-using-SQLAlchemy
 
 ----
 
-## Table of Contents (ClimatePy.ipynb)
+## Table of Contents (climate_analysis.ipynb)
 
 ----
 
@@ -14,18 +14,13 @@
 # <br><br> **Section 2: Exploratory Station Analysis**
 > ## <br> **2.1: Date Ranges**
 >> ### **Query Results**
->> ### **Display Date Range**
 >> ### **Display Date One Year Prior to Last Date**
 > ## <br> **2.2: Total Number of Stations**
->> ### **Query Results**
->> ### **Display Total Number of Stations**
 > ## <br> **2.3: Most Active Station IDs**
->> ### **Initialize Date Lists**
 >> ### **Query Results**
 >> ### **Save Query Results to DataFrame**
 >> ### **Display Most Active Station IDs By Year**
 > ## <br> **2.4: Minimum, Maximum, and Average Temperatures**
->> ### **Initialize Temperature Lists**
 >> ### **Query Results**
 >> ### **Save Query Results to DataFrame**
 >> ### **Display Minimum, Maximum, and Average Temperatures By Year**
@@ -104,3 +99,9 @@
 >> ### **Calculations**
 >> ### **Display Total Precipitation vs. Year**
 >> ### **Summary Statistics**
+
+----
+
+## Copyright
+
+Nicholas J. George © 2023. All Rights Reserved.
