@@ -8,7 +8,7 @@
 
 If the computer has Anaconda, Jupyter Notebook, and a recent version of Python, the IPython notebook already has the following dependencies installed: datetime, io, json, matplotlib, numpy, pandas, pathlib, os, pandas, requests, requests_html, scipy.
 
-In addition to those modules, the IPython notebook needs the following to execute: holoviews, hvplot, geoviews, geopy, aspose-words, dataframe-image, SQLite, SQLAlchemy, and Flask.
+In addition to those modules, the IPython notebook needs the following to execute: holoviews, hvplot, geoviews, geopy, aspose-words, dataframe-image, sqlite, sqlalchemy, flask, flask_cors.
 
 Here are the requisite Terminal commands for the installation of these peripheral modules (SQLite is already installed on macOS):
 
@@ -28,17 +28,19 @@ python3 -m pip install sqlalchemy
 
 python3 -m pip install Flask
 
+python3 -m pip install flask-cors
+
 ----
 
 ### **Usage:**
 
 ----
 
-The IPython notebook, ClimatePy.ipynb, and Flask API, ClimateApp.py, use the files in the Resources Folder and will not run without them.  The IPython Notebook and Flask API must have the following Python scripts in the same folder with them:
+The IPython notebook, climate_analysis.ipynb, and Flask API, climate_api.py, use the files in the folder, resources, and will not run without them.  The IPython Notebook and Flask API must have the following Python scripts in the same folder with them:
 
-PyConstants.py
+climate_analysis_constants.py
 
-PyFunctions.py
+climate_api.py
 
 PyLogConstants.py
 
