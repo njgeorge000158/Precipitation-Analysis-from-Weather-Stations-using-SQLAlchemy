@@ -1,4 +1,4 @@
-This folder includes backup files for the IPython notebook, oil_energy_sector.ipynb.
+This folder includes backup files for the IPython notebook, climate_analysis.ipynb.
 
 ----
 
