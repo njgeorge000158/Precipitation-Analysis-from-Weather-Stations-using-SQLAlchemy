@@ -42,15 +42,11 @@ climate_analysis_constants.py
 
 climate_api.py
 
-logx_constants.py
-
 logx.py
 
 mathx.py
 
 matplotlibx.py
-
-pandasx_constants.py
 
 pandasx.py
 
@@ -68,7 +64,7 @@ To place the IPython notebook in Log Mode or Image Mode set the parameter for th
 
 #### Source code
 
-climate_analysis.ipynb, climate_api.py, climate_analysis_constants.py, climate_api.py, logx_constants.py, logx.py, mathx.py, matplotlibx.py, pandasx_constants.py, pandasx.py, timex.py
+climate_analysis.ipynb, climate_api.py, climate_analysis_constants.py, climate_api.py, logx.py, mathx.py, matplotlibx.py, pandasx.py, timex.py
 
 #### Input files
 
