@@ -12,23 +12,23 @@ In addition to those modules, the IPython notebook needs the following to execut
 
 Here are the requisite Terminal commands for the installation of these peripheral modules (SQLite is already installed on macOS):
 
-python3 -m pip install holoviews
+pip3 install -U holoviews
 
-python3 -m pip install hvplot
+pip3 install -U hvplot
 
-python3 -m pip install geoviews
+pip3 install -U geoviews
 
-python3 -m pip install geopy
+pip3 install -U geopy
 
-python3 -m pip install aspose-words
+pip3 install -U aspose-words
 
-python3 -m pip install dataframe-image
+pip3 install -U dataframe-image
 
-python3 -m pip install sqlalchemy
+pip3 install -U sqlalchemy
 
-python3 -m pip install Flask
+pip3 install -U Flask
 
-python3 -m pip install flask-cors
+pip3 install -U flask-cors
 
 ----
 
@@ -54,7 +54,7 @@ timex.py
 
 If the folders, logs and images, are not present, the IPython notebook will create them.  The folder, resources, holds the sqlite database file for the IPython Notebook and Flask API; the folder, logs, contains log files from testing the IPython Notebook; and the folder, images, has the PNG image files of the IPython Notebook's tables and plots.
 
-To place the IPython notebook in Log Mode or Image Mode set the parameter for the appropriate subroutine in coding cell #2 to True. If the program is in Log Mode, it writes information to the log file in the folder, logs. If the program is in Image Mode, it writes all DataFrames, hvplot maps, and matplotlib plots to PNG files in the folder, images.
+To place the IPython notebook in Log Mode or Image Mode set the parameter for the appropriate subroutine in coding cell #2 to True. In Log Mode, the notebook writes information to the log file in the folder, logs. If the program is in Image Mode, it writes all DataFrames, hvplot maps, and matplotlib plots to PNG files in the folder, images.
 
 ----
 
@@ -80,7 +80,7 @@ n/a
 
 #### Software
 
-Flask, Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.4, SQLite
+Flask, Jupyter Notebook, Matplotlib, Numpy, Pandas, Python 3.11.5, SQLite
 
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
